@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Divisas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js" defer></script>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="logo" width="40" height="35">Super convertidor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Acerca de</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <div class="container">
+        <img src="https://3.bp.blogspot.com/-QTxTuQcjrxs/V_PKhVsbCNI/AAAAAAAAm_g/sB7Ol8lhalIor7jFd92FTI5GJq2WsQTygCLcB/s1600/01%2BSUPER%2BMAN.jpg" alt="" class="" width="185px" height="298px"><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="">Cantidad</label>
+                <input type="text" id="cantidad" class="form-control">
+            </div>
+            <div class="col-sm-6">
+                <label for="">Divisa</label>
+                <select id="can_divisa" class="form-control">
+                    <option value="1">Peso(MXN)</option>
+                    <option value="2">Dollar(USD)</option>
+                    <option value="3">Dollar Canadiense(CAN)</option>
+                    <option value="4">Euro(EUR)</option>
+                    <option value="5">Yen(YEN)</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="">Tipo de cambio</label>
+                <input type="text" id="valor" class="form-control" disabled>
+            </div>
+            <div class="col-sm-6">
+                <label for="">Moneda extranjera</label>
+                <select id="sel_divisa" class="form-control" onchange="valor_divisa()">
+                    <option value="1">Peso(MXN)</option>
+                    <option value="2">Dollar(USD)</option>
+                    <option value="3">Dollar Canadiense(CAN)</option>
+                    <option value="4">Euro(EUR)</option>
+                    <option value="5">Yen(YEN)</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <button type="button" onclick="conversor()">Calcular</button>
+                <p id="resultado" class="text-light"></p>
+            </div>
+        </div>
+    </div>
+    <!---script js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

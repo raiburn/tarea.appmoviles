@@ -1,0 +1,14 @@
+.box{
+	text-align: center;
+	height: 80px;
+	color: white;
+}
+#double{
+	background-color: red;
+}
+#triple{
+	background-color: blue;
+}
+#full{
+	background-color: purple;
+}
