@@ -4,12 +4,12 @@ const metros = () => {
 }
 
 const kilometros = () =>{
-    const millas = document.getElementById("cantidad").value/0.621371;
+    const millas = document.getElementById("cantidad").value/1.6;
     document.getElementById("valor").value = millas.toString();
 }
 
 const litros = () => {
-    const galones = document.getElementById("cantidad").value/0.264172;
+    const galones = document.getElementById("cantidad").value*0.26;
     document.getElementById("valor").value = galones.toString();
 }
 
@@ -19,6 +19,6 @@ const celsius = () => {
 }
 
 const gramos = () => {
-    const libras = (document.getElementById("cantidad").value)*2.20462;
+    const libras = (document.getElementById("cantidad").value)*0.00220462;
     document.getElementById("valor").value = libras.toString();
 }
